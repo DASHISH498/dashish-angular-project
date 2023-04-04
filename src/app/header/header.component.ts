@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  menuList = [
+    {name: 'HOME'},{name: 'ABOUT'},{name: 'SKILLS'},{name: 'SERVICES'},{name: 'PORTFOLIO'},{name: 'YOUTUBE'},{name: 'CONTACT'}
+  ]
 }
