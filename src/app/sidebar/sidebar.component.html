@@ -1,0 +1,20 @@
+<div class="side-menubar">
+    <div class="side-menu-inner">
+        <!-- LOGO GOES HERE -->
+        <div class="logo">
+            <a href="index.html" class="navbar-brand"><span>A</span>shish Soni</a>
+        </div>
+        <!-- LOGO GOES HERE -->
+
+        <ul class="list-unstyled pl-0 d-grid">
+            <li *ngFor="let menu of menuList" class="overflow-hidden position-relative">
+              <a href="javascript:void(0)" class="me-3 text-decoration-none position-relative">{{ menu.name }}</a>
+            </li>
+        </ul>
+
+        <!-- CURRENT YEAR -->
+        <div class="year-display text-white">
+            <p> &copy; {{ currentYear }} Made With <span class="text-danger">&#9829;</span> Ashish</p>
+        </div>
+    </div>
+</div>

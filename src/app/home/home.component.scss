@@ -1,0 +1,24 @@
+/* VARIABLE */
+$white-color: #FFFFFF;
+$profile-border: #ffd15c;
+
+.intro {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border: 8px solid $profile-border;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.portfolio-name {
+    h1 {
+        font-weight: 700;
+    }
+}
