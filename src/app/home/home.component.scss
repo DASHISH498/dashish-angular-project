@@ -1,6 +1,7 @@
 /* VARIABLE */
 $white-color: #FFFFFF;
 $profile-border: #ffd15c;
+$background-red: #ff4c60;
 
 .intro {
     margin: auto;
@@ -20,5 +21,36 @@ $profile-border: #ffd15c;
 .portfolio-name {
     h1 {
         font-weight: 700;
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    a {
+        margin: 0px 10px;
+        font-size: 20px;
+        color: $white-color;
+        transition: 0.2s;
+        &:hover {
+            color: $profile-border;
+            filter: blur(1px);
+        }
+    }
+}
+
+.hire-me {
+    .btn-warning {
+        background-color: $background-red;
+        color: $white-color;
+        font-weight: 600;
+        width: 120px;
+        border-radius: 20px;
+        transition: 0.3s;
+        transform: perspective(1px) translateZ(0);
+        &:hover {
+            scale: 1.1;
+        }
     }
 }
