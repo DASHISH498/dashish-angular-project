@@ -1,0 +1,80 @@
+/* VARIABLE */
+$white-color: #FFFFFF;
+$profile-border: #ffd15c;
+$background-red: #ff4c60;
+$background-dpurple: #353353;
+
+.about-inner {
+    padding: 100px 50px;
+    background-color: $background-dpurple;
+    position: relative;
+    .heading-top {
+        padding-top: 35px;
+        position: relative;
+        z-index: 99;
+        h1 {
+            color: $white-color;
+            font-weight: 700;
+        }
+    }
+    .about-withimg {
+        margin-top: 50px;
+        width: 100%;
+        .intro-parent {
+            width: 30%;
+            margin-right: 60px;
+            .intro {
+                width: 30%;
+                height: 200px;
+                width: 200px;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                border: 8px solid $profile-border;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .description {
+            background-color: #302f4e;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            position: relative;
+            .desc-para {
+                width: 100%;
+                float: left;
+                p {
+                    color: $white-color;
+                    letter-spacing: 1px;
+                    margin-bottom: 30px;
+                }
+                .cv-download {
+                    .d_pdf {
+                        padding: 10px 40px;
+                        border-radius: 30px;
+                        background-color: $background-red;
+                        color: $white-color;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .position-imgage {
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        img {
+            transform: rotate(90deg);
+            width: 50px;
+            opacity: 0.4;
+        }
+    }
+}

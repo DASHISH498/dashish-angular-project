@@ -1,0 +1,31 @@
+/* VARIABLE */
+$white-color: #FFFFFF;
+$profile-border: #ffd15c;
+$background-red: #ff4c60;
+$background-dpurple: #353353;
+
+.service-inner {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: $background-dpurple;
+    position: relative;
+    .heading-top {
+        padding-top: 35px;
+        position: relative;
+        z-index: 99;
+        h1 {
+            color: $white-color;
+            font-weight: 700;
+        }
+    }
+    .position-imgage {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        img {
+            transform: rotate(90deg);
+            width: 50px;
+            opacity: 0.4;
+        }
+    }
+}

@@ -54,3 +54,46 @@ $background-red: #ff4c60;
         }
     }
 }
+
+.scroll-down {
+    position: relative;
+    top: 110px;
+    left: 0%;
+    text-align: center;
+    color: $white-color;
+    a {
+        color: $white-color;
+        text-decoration: none;
+    }
+    .mouse {
+        border: solid 2px #fff;
+        border-radius: 16px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        height: 26px;
+        position: relative;
+        width: 20px;
+        .wheel {
+            background: #fff;
+            border-radius: 100%;
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 37%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 4px;
+            animation: ani-mouse 2s linear infinite;
+        }
+    }
+}
+
+@keyframes ani-mouse {
+    0% { transform: translateY(-8px); }
+    100% { transform: translateY(5px); }
+}
+@-webkit-keyframes ani-mouse {
+    0% { transform: translateY(-8px); }
+    100% { transform: translateY(5px); }
+}
