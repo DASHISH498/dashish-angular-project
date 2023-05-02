@@ -4,28 +4,77 @@ $profile-border: #ffd15c;
 $background-red: #ff4c60;
 $background-dpurple: #353353;
 
-.service-inner {
+.service-parent {
     padding-left: 50px;
     padding-right: 50px;
     background-color: $background-dpurple;
     position: relative;
-    .heading-top {
-        padding-top: 35px;
-        position: relative;
-        z-index: 99;
-        h1 {
-            color: $white-color;
-            font-weight: 700;
+    .service-inner {
+        .heading-top {
+            padding-top: 35px;
+            position: relative;
+            z-index: 99;
+            h1 {
+                color: $white-color;
+                font-weight: 700;
+            }
+        }
+        .position-imgage {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            img {
+                transform: rotate(90deg);
+                width: 50px;
+                opacity: 0.4;
+            }
         }
     }
-    .position-imgage {
-        position: absolute;
-        top: 0;
-        left: 5%;
-        img {
-            transform: rotate(90deg);
-            width: 50px;
-            opacity: 0.4;
+    .service-box {
+        margin-top: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+        .service-box-inner {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+            margin-bottom: 30px;
+        }
+        .uiux-design {
+            background-color: #6c6ce5;
+        }
+        .web-development {
+            background-color: #f9d74c;
+        }
+        .mobile-friendly {
+            background-color: #f97b8b;
+        }
+        .uiux-design, .web-development, .mobile-friendly {
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
+            text-align: center;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(-10px);
+            }
+            .icon_img {
+                margin-bottom: 20px;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+            h2 {
+                color: $white-color;
+                font-size: 28px;
+            }
+            p {
+                font-size: 18px;
+                letter-spacing: 0.5px;
+            }
         }
     }
 }
