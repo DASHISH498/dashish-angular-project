@@ -5,7 +5,8 @@ $background-red: #ff4c60;
 $background-dpurple: #353353;
 
 .service-parent {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: $background-dpurple;
     position: relative;
     .service-inner {
