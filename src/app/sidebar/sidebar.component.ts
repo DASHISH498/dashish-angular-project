@@ -13,7 +13,7 @@ export class SidebarComponent {
     {name: 'SERVICES', icnName: 'business_center'},
     {name: 'SKIILS', icnName: 'storage'},
     {name: 'EXPERIENCE', icnName: 'school'},
-    {name: 'WORKS', icnName: 'group_work'},
+    {name: 'PROJECTS', icnName: 'group_work'},
     {name: 'GITHUB', icnName: 'memory'},
     {name: 'CONTACT', icnName: 'contacts'}
   ]

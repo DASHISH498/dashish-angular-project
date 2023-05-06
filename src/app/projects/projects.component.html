@@ -1,1 +1,31 @@
-<p>projects works!</p>
+<section id="projects" class="projects-parent">
+    <div class="projects-inner">
+        <div class="heading-top">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="position-imgage">
+            <img src="assets/images/RedBol.png" alt="">
+        </div>
+    </div>
+
+    <div class="projects-box">
+        <ul class="projects-box-inner list-unstyled pl-0">
+            <li class="proj-datalist position-relative" *ngFor="let project of projectlist">
+                <a href="{{'/' + project.redirectURL }}">
+                    <div class="project-imgbox">
+                        <img src='assets/images/{{project.projectimage}}.png' alt="">
+                    </div>
+                    <div class="hoverdata">
+                        <h3>{{project.projectname}}</h3>
+                        <p>{{project.projectdescription}}</p>
+                        <span>{{project.redirectURL}}</span>
+                    </div>
+                    <div class="projectlabel">
+                        <span>{{project.id}}</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
