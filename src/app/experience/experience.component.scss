@@ -1,0 +1,88 @@
+/* VARIABLE */
+$white-color: #FFFFFF;
+$profile-border: #ffd15c;
+$background-red: #ff4c60;
+$background-dpurple: #353353;
+
+.experience-parent {
+    padding: 50px;
+    background-color: $background-dpurple;
+    position: relative;
+    .experience-inner {
+        .heading-top {
+            padding-top: 35px;
+            position: relative;
+            z-index: 99;
+            h1 {
+                color: $white-color;
+                font-weight: 700;
+            }
+        }
+        .position-imgage {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            img {
+                transform: rotate(90deg);
+                width: 50px;
+                opacity: 0.4;
+            }
+        }
+    }
+    .experience-box {
+        position: relative;
+        margin-top: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #302f4e;
+        padding: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        .experience-box-inner {
+            margin-bottom: 30px;
+            max-width: 1130px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2rem;
+            position: relative;
+            .exp-datalist {
+                .content {
+                    position: relative;
+                    padding-left: 40px;
+                    &::after {
+                        position: absolute;
+                        content: '\eb3f';
+                        top: -6px;
+                        left: -7px;
+                        color: #ff4c60;
+                        font-size: 24px;
+                        font-family: "Material Icons";
+                        background: #302f4e;
+                        z-index: 99;
+                    }
+                }
+            }
+            .line {
+                position: absolute;
+                width: 1px;
+                background-color: #ff4c60;
+                top: 30px;
+                bottom: 30px;
+                left: 5px;
+            }
+            span.year {
+                color: #8b88b1;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            .company-name {
+                color: $white-color;
+                margin-top: 10px;
+                font-weight: 700;
+            }
+            .responsbilities, .responsbility-summary {
+                color: $white-color;
+            }
+        }
+    }
+}

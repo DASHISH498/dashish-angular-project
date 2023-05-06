@@ -6,31 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  serviceBOx = [
+
+  progressBar = [
     {
-      imgname: 'ui_ux_design',
-      boxheading: 'UI/UX Design',
-      paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'
+      boxheading: 'HTML5'
     },
     {
-      imgname: 'web_development',
-      boxheading: 'Web Development',
-      paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'
+      boxheading: 'CSS3'
     },
     {
-      imgname: 'reponsive_design',
-      boxheading: 'Mobile Friendly',
-      paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'
+      boxheading: 'SCSS/LESS'
     },
     {
-      imgname: 'graphic_design',
-      boxheading: 'Graphic Design',
-      paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'
+      boxheading: 'JavaScript'
     },
     {
-      imgname: 'clean_code',
-      boxheading: 'Clean Code',
-      paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'
+      boxheading: 'Angular JS'
+    },
+    {
+      boxheading: 'Adobe Photoshop'
+    },
+    {
+      boxheading: 'Adobe Illustrator'
+    },
+    {
+      boxheading: 'Adobe XD'
+    },
+    {
+      boxheading: 'Figma'
     }
   ]
 

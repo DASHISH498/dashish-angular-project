@@ -1,0 +1,32 @@
+<section id="experience" class="experience-parent">
+    <div class="experience-inner">
+        <div class="heading-top">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="position-imgage">
+            <img src="assets/images/RedBol.png" alt="">
+        </div>
+    </div>
+
+    <div class="experience-box">
+        <ul class="experience-box-inner list-unstyled pl-0">
+            <li class="exp-datalist" *ngFor="let experience of experiencebox">
+                <!-- <span class="material-icons-outlined">{{experience.icnName}}</span> -->
+                <div class="content">
+                    <span class="year">{{experience.year}}</span>
+                    <h2 class="company-name">{{experience.company_name}}</h2>
+                    <p class="responsbility-summary">{{experience.summary}}</p>
+                    <div class="responsbilities">
+                        <ul class="responsbilities-item" *ngFor="let responsbility of responsbilities">
+                            <li>{{responsbility.data}}</li>
+                            <li>{{responsbility.data}}</li>
+                            <li>{{responsbility.data}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <span class="line"></span>
+        </ul>
+    </div>
+</section>
