@@ -1,0 +1,68 @@
+/* VARIABLE */
+$white-color: #FFFFFF;
+$profile-border: #ffd15c;
+$background-red: #ff4c60;
+$background-dpurple: #353353;
+
+.contact-parent {
+    padding: 50px;
+    background-color: $background-dpurple;
+    position: relative;
+    .contact-inner {
+        .heading-top {
+            position: relative;
+            z-index: 99;
+            h1 {
+                color: $white-color;
+                font-weight: 700;
+            }
+        }
+        .position-imgage {
+            position: absolute;
+            top: 0;
+            left: 5%;
+            img {
+                transform: rotate(90deg);
+                width: 50px;
+                opacity: 0.4;
+            }
+        }
+    }
+    .contact-content {
+        height: 40px;
+    } 
+    .contact-info {
+        background-image: url('/assets/images/map-light.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 200px;
+        color: $white-color;
+        a {
+            color: $background-red;
+            text-decoration: none;
+        }
+    }
+    .contact-form {
+        form {
+            .form-control {
+                padding: 20px 25px;
+                border-radius: 50px;
+                margin-bottom: 25px;
+            }
+            textarea {
+                resize: none;
+                min-height: 200px;
+                border-radius: 20px !important;
+            }
+            .send-messeage {
+                button {
+                    background-color: $background-red;
+                    color: $white-color;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

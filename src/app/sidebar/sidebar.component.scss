@@ -19,6 +19,10 @@ $hover-menu: #ffd15c;
     z-index: 1;
     transform: translateX(0);
     transition: all 0.3s ease-in-out;
+    .side-menu-inner {
+        position: relative;
+        transition: 0.5s ease-in;
+    }
     .navbar-brand {
         position: relative;
         font-size: 26px !important;

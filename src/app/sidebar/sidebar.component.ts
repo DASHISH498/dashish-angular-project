@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  visible:boolean = true
   /* SIDEBAR MENU LIST */
   menuList = [
     {name: 'HOME', icnName: 'home'},
@@ -20,5 +21,4 @@ export class SidebarComponent {
 
   /* DISPLAY CURRENT YEAR IN SIDEBAR */
   currentYear : number = new Date().getFullYear();
-
 }
