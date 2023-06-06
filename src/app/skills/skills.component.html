@@ -12,9 +12,12 @@
     <div class="progressbar-box">
         <ul class="progressbox-inner list-unstyled pl-0">
             <li *ngFor="let progress of progressBar" class="text-white">
-                <h2 class="label">{{progress.boxheading}}</h2>
+                <div class="label-percent d-flex align-items-center justify-content-between mb-2">
+                    <h2 class="label mb-0">{{progress.boxheading}}</h2>
+                    <span>70%</span>
+                </div>
                 <div class="progress">
-                    <div class="progress-bar" [ngStyle]="getRandomColor()" style="width: 90%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" [ngStyle]="getRandomColor()" [style.width]="progress.width + '%'"></div>
                 </div>
             </li>
         </ul>

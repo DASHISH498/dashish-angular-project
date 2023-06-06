@@ -3,9 +3,6 @@
 .pl-0 {
     padding-left: 0 !important;
 }
-// .change-position {
-//     left: 1% !important;
-// }
 
 .body-parent {
     width: 100%;
@@ -13,7 +10,7 @@
     .collapse-icon {
         position: relative;
         .close-sidebar {
-            position: absolute;
+            position: fixed;
             top: 13px;
             left: 1%;
             cursor: pointer;

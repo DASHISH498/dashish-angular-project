@@ -9,7 +9,10 @@
 
         <ul class="list-unstyled pl-0 d-grid">
             <li *ngFor="let menu of menuList" class="overflow-hidden position-relative">
-              <a href="javascript:void(0)" class="me-3 text-decoration-none position-relative"><span class="material-icons-outlined">{{ menu.icnName }} &nbsp;</span> {{ menu.name }}</a>
+              <a routerLink="" class="me-3 text-decoration-none position-relative">
+                <span class="material-icons-outlined">{{ menu.icnName }} &nbsp;</span>
+                 {{ menu.name }}
+                </a>
             </li>
         </ul>
 

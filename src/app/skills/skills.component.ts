@@ -9,7 +9,8 @@ export class SkillsComponent {
 
   progressBar = [
     {
-      boxheading: 'HTML5'
+      boxheading: 'HTML5',
+      width: '90%'
     },
     {
       boxheading: 'CSS3'

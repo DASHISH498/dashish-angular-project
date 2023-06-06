@@ -12,7 +12,7 @@
     <div class="projects-box">
         <ul class="projects-box-inner list-unstyled pl-0">
             <li class="proj-datalist position-relative" *ngFor="let project of projectlist">
-                <a href="{{'/' + project.redirectURL }}">
+                <a href="{{ project.redirectURL }}">
                     <div class="project-imgbox">
                         <img src='assets/images/{{project.projectimage}}.png' alt="">
                     </div>

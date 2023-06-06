@@ -13,14 +13,17 @@ export class ExperienceComponent {
       company_name: 'Aditadv Tech Private Limited',
       paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
       summary : 'I have working as a front end developer. I am working on HTML CSS Bootstrap, JavaScript, AngularJS & Figma',
-      year: '2021 - Present'
+      year: '2021 - Present',
+      data:[{point:"test"},{point:"task 2"}]
     },
     {
       icnName: 'school',
       company_name: 'Red Symbol Technologies Pvt. Ltd.',
       paragraph: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
       summary : 'I have worked as a Web Graphic Designer. I am worked on HTML, CSS, Bootstrap, JavaScript & Photoshop',
-      year: 'June - 2020 – January - 2021'
+      year: 'June - 2020 – January - 2021',
+      data:[{point:"test 3"},{point:"task 4"}]
+
     },
     {
       icnName: 'school',
