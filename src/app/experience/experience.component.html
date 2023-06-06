@@ -18,8 +18,8 @@
                     <h2 class="company-name">{{experience.company_name}}</h2>
                     <p class="responsbility-summary">{{experience.summary}}</p>
                     <div class="responsbilities">
-                        <ul class="responsbilities-item"  *ngFor="let points of experience.data">
-                            <li>{{points.point}}</li>
+                        <ul class="responsbilities-item"  *ngFor="let responsbilities of experience.data">
+                            <li>{{responsbilities.point}}</li>
                         </ul>
                     </div>
                 </div>
