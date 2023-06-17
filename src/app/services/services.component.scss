@@ -34,10 +34,11 @@ $background-dpurple: #353353;
         box-sizing: border-box;
         .service-box-inner {
             margin-bottom: 30px;
-            max-width: 1130px;
+            max-width: 100%;
             margin: 0 auto;
             display: grid;
             gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
             .box {
                 background-color: #6c6ce5;
                 padding: 1rem;
@@ -89,17 +90,5 @@ $background-dpurple: #353353;
             transition: 0.3s ease-in-out;
             
         }
-    }
-}
-
-/* MEDIA QUERY */
-@media (min-width: 900px) {
-    .service-box-inner {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-@media (min-width: 600px) {
-    .service-box-inner {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
