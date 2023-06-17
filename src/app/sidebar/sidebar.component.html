@@ -9,7 +9,7 @@
 
         <ul class="list-unstyled pl-0 d-grid">
             <li *ngFor="let menu of menuList" class="overflow-hidden position-relative">
-              <a routerLink="" class="me-3 text-decoration-none position-relative">
+              <a href="{{ menu.redirectURL }}" class="me-3 text-decoration-none position-relative">
                 <span class="material-icons-outlined">{{ menu.icnName }} &nbsp;</span>
                  {{ menu.name }}
                 </a>
