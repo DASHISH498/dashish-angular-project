@@ -35,12 +35,13 @@ $background-dpurple: #353353;
         box-sizing: border-box;
         overflow: hidden;
         .projects-box-inner {
+            position: relative;
             margin-bottom: 30px;
             max-width: 100%;
             margin: 0 auto;
             display: grid;
             gap: 2rem;
-            position: relative;
+            grid-template-columns: repeat(3, 1fr);
             .proj-datalist {
                 position: relative;
                 overflow: hidden;
