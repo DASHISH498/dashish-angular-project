@@ -83,3 +83,20 @@ body {
         display: block !important;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .about-inner {
+        padding: 100px 20px 50px 20px !important;
+    }
+    .service-parent, .progress-parent, .experience-parent, .projects-parent, .contact-parent {
+        padding: 50px 20px !important;
+    }
+    .contact-parent {
+        .contact-form {
+            margin-top: 20px !important;
+        }
+        .row {
+            margin-top: 0 !important;
+        }
+    }
+}
