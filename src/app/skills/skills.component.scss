@@ -40,6 +40,41 @@ $background-dpurple: #353353;
             gap: 2rem;
             h2.label {
                 font-size: 18px;
+                color: #FFFFFF;
+            }
+            .progress {
+                overflow: visible;
+                .progress-bar {
+                    position: relative;
+                    overflow: visible;
+                    &:hover span {
+                        visibility: visible;
+                    }
+                    span {
+                        position: absolute;
+                        background: #ff4c60;
+                        padding: 0px 3px;
+                        border-radius: 2px;
+                        top: 20px;
+                        right: -15px;
+                        visibility: hidden;
+                        transition: 0.2s ease-in;
+                        &::after {
+                            bottom: 100%;
+                            left: 50%;
+                            border: solid transparent;
+                            content: " ";
+                            height: 0;
+                            width: 0;
+                            position: absolute;
+                            pointer-events: none;
+                            border-color: rgba(255, 255, 255, 0);
+                            border-bottom-color: #ff4c60;
+                            border-width: 5px;
+                            margin-left: -5px;
+                        }
+                    }
+                }
             }
         }
     }
